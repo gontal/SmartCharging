@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "32464c31-f300-43da-a0ed-22000f9e0507": {
+      "ProjectGuid": "32464c31-f300-43da-a0ed-22000f9e0507",
+      "DisplayName": "Jedlix",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "c6d3a84b-9284-4fe6-8d7f-ce80e7453fac": {
+      "ProjectGuid": "c6d3a84b-9284-4fe6-8d7f-ce80e7453fac",
+      "DisplayName": "Jedlix.UnitTests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jedlix", "Jedlix\Jedlix.csproj", "{32464C31-F300-43DA-A0ED-22000F9E0507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jedlix.UnitTests", "Jedlix.UnitTests\Jedlix.UnitTests.csproj", "{C6D3A84B-9284-4FE6-8D7F-CE80E7453FAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32464C31-F300-43DA-A0ED-22000F9E0507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32464C31-F300-43DA-A0ED-22000F9E0507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32464C31-F300-43DA-A0ED-22000F9E0507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32464C31-F300-43DA-A0ED-22000F9E0507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D3A84B-9284-4FE6-8D7F-CE80E7453FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D3A84B-9284-4FE6-8D7F-CE80E7453FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D3A84B-9284-4FE6-8D7F-CE80E7453FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D3A84B-9284-4FE6-8D7F-CE80E7453FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D629414F-728D-4348-BBDB-F13964BBC32B}
+	EndGlobalSection
+EndGlobal

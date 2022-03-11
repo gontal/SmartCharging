@@ -1,0 +1,17 @@
+C:\Projects\Jedlix\Jedlix\bin\Debug\net6.0\Jedlix.exe
+C:\Projects\Jedlix\Jedlix\bin\Debug\net6.0\Jedlix.deps.json
+C:\Projects\Jedlix\Jedlix\bin\Debug\net6.0\Jedlix.runtimeconfig.json
+C:\Projects\Jedlix\Jedlix\bin\Debug\net6.0\Jedlix.dll
+C:\Projects\Jedlix\Jedlix\bin\Debug\net6.0\ref\Jedlix.dll
+C:\Projects\Jedlix\Jedlix\bin\Debug\net6.0\Jedlix.pdb
+C:\Projects\Jedlix\Jedlix\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Projects\Jedlix\Jedlix\obj\Debug\net6.0\Jedlix.csproj.AssemblyReference.cache
+C:\Projects\Jedlix\Jedlix\obj\Debug\net6.0\Jedlix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Jedlix\Jedlix\obj\Debug\net6.0\Jedlix.AssemblyInfoInputs.cache
+C:\Projects\Jedlix\Jedlix\obj\Debug\net6.0\Jedlix.AssemblyInfo.cs
+C:\Projects\Jedlix\Jedlix\obj\Debug\net6.0\Jedlix.csproj.CoreCompileInputs.cache
+C:\Projects\Jedlix\Jedlix\obj\Debug\net6.0\Jedlix.csproj.CopyComplete
+C:\Projects\Jedlix\Jedlix\obj\Debug\net6.0\Jedlix.dll
+C:\Projects\Jedlix\Jedlix\obj\Debug\net6.0\ref\Jedlix.dll
+C:\Projects\Jedlix\Jedlix\obj\Debug\net6.0\Jedlix.pdb
+C:\Projects\Jedlix\Jedlix\obj\Debug\net6.0\Jedlix.genruntimeconfig.cache
