@@ -21,8 +21,6 @@ C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\Microsoft.TestPlatform.Comm
 C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\Microsoft.TestPlatform.CrossPlatEngine.dll
 C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\Microsoft.TestPlatform.Utilities.dll
 C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll
-C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
-C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\NuGet.Frameworks.dll
 C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\nunit.framework.dll
@@ -103,3 +101,5 @@ C:\Projects\Jedlix\Jedlix.UnitTests\obj\Debug\net6.0\Jedlix.UnitTests.dll
 C:\Projects\Jedlix\Jedlix.UnitTests\obj\Debug\net6.0\ref\Jedlix.UnitTests.dll
 C:\Projects\Jedlix\Jedlix.UnitTests\obj\Debug\net6.0\Jedlix.UnitTests.pdb
 C:\Projects\Jedlix\Jedlix.UnitTests\obj\Debug\net6.0\Jedlix.UnitTests.genruntimeconfig.cache
+C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Projects\Jedlix\Jedlix.UnitTests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll

@@ -315,7 +315,7 @@
           "build/netcoreapp1.0/MSTest.TestAdapter.props": {}
         }
       },
-      "MSTest.TestFramework/2.2.7": {
+      "MSTest.TestFramework/2.2.8": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -1423,10 +1423,10 @@
         "mstest.testadapter.nuspec"
       ]
     },
-    "MSTest.TestFramework/2.2.7": {
-      "sha512": "qroVMzabIcbqwxtlDZriZflqs3nKpmqSVoM/Nfw9fg+F6885rrgo9R4gwmK7xxPPd8gpDrmNqqwpnyh6GMoN9g==",
+    "MSTest.TestFramework/2.2.8": {
+      "sha512": "phUoHuGTuw9T5yekxPHLLLq8jE56yufmh2yPlJq1IfkT4a3tYZ2htkeTlnQmzmJP3hI5xYhlqwiHcy3JqVt/OA==",
       "type": "package",
-      "path": "mstest.testframework/2.2.7",
+      "path": "mstest.testframework/2.2.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1538,7 +1538,7 @@
         "lib/uap10.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
         "lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml",
         "lib/uap10.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.TestFramework.xml",
-        "mstest.testframework.2.2.7.nupkg.sha512",
+        "mstest.testframework.2.2.8.nupkg.sha512",
         "mstest.testframework.nuspec"
       ]
     },
@@ -2725,7 +2725,7 @@
     "net6.0": [
       "Jedlix >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.7",
-      "MSTest.TestFramework >= 2.2.7",
+      "MSTest.TestFramework >= 2.2.8",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "NUnit >= 3.13.2",
       "coverlet.collector >= 3.1.0"
@@ -2780,7 +2780,7 @@
           },
           "MSTest.TestFramework": {
             "target": "Package",
-            "version": "[2.2.7, )"
+            "version": "[2.2.8, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
