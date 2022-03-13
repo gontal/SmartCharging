@@ -47,12 +47,26 @@ namespace Jedlix.UnitTests
             {
                  new object[]{ new List<Tariff>() { new Tariff(new DateTime(2022, 3, 4, 18, 0, 0), new DateTime(2022, 3, 4, 23, 0, 0), 10) }, 
                                                     new DateTime(2022, 3, 4, 20, 0, 0), 
-                                                    new DateTime(2022, 3, 4, 9, 0, 0) },
+                                                    new DateTime(2022, 3, 5, 09, 0, 0) },
 
                  new object[]{ new List<Tariff>() { new Tariff(new DateTime(2022, 3, 4, 9, 0, 0), new DateTime(2022, 3, 4, 12, 0, 0), 10),
                                                     new Tariff(new DateTime(2022, 3, 4, 18, 0, 0), new DateTime(2022, 3, 4, 23, 0, 0), 10)}, 
                                                     new DateTime(2022, 3, 4, 20, 0, 0), 
-                                                    new DateTime(2022, 3, 4, 9, 0, 0) }
+                                                    new DateTime(2022, 3, 5, 09, 0, 0) }
+            };
+        }
+        private static IEnumerable<object[]> GetNonRelevantTariffs()
+        {
+            return new List<object[]>()
+            {
+                 new object[]{ new List<Tariff>() { new Tariff(new DateTime(2022, 3, 4, 10, 0, 0), new DateTime(2022, 3, 4, 11, 0, 0), 10) },
+                                                    new DateTime(2022, 3, 4, 20, 0, 0),
+                                                    new DateTime(2022, 3, 5, 9, 0, 0) },
+
+                 new object[]{ new List<Tariff>() { new Tariff(new DateTime(2022, 3, 4, 10, 0, 0), new DateTime(2022, 3, 4, 11, 0, 0), 10),
+                                                    new Tariff(new DateTime(2022, 3, 4, 12, 0, 0), new DateTime(2022, 3, 4, 14, 0, 0), 10)},
+                                                    new DateTime(2022, 3, 4, 20, 0, 0),
+                                                    new DateTime(2022, 3, 5, 9, 0, 0) }
             };
         }
 
@@ -73,7 +87,7 @@ namespace Jedlix.UnitTests
         [DataRow(2022, 3, 4, 20, 20)]
         [DataRow(2022, 3, 4, 20, 21)]
         [DataRow(2022, 3, 4, 20, 23)]
-        public void LeavingDate_ShouldBeTheSameAsStartingDate_If_LeavingTimeIsMoreOrEqual_StartingTime(int year, int month, int day, int startingHour, int leavingHour)
+        public void SetLeavingDate_TheSameAsStartingDate_IfLeavingTimeIsMoreOrEqual_StartingTime(int year, int month, int day, int startingHour, int leavingHour)
         {
             var startingTime = new DateTime(year, month, day, startingHour, 0, 0);
             var leavingTime = new DateTime(year, month, day, leavingHour, 0, 0);
@@ -81,15 +95,23 @@ namespace Jedlix.UnitTests
 
             Assert.AreEqual(startingTime.Date, result.Date);
         }
+
         [TestMethod]
         [DynamicData(nameof(GetTestTariffs), DynamicDataSourceType.Method)]
-        public void ShouldDuplicateTarrifsForTheNextDate(List<Tariff> tariffs, DateTime startingDate, DateTime leavingDate)
+        public void DuplicateTarrifsForTheNextDate(List<Tariff> tariffs, DateTime startingDate, DateTime leavingDate)
         {
-            var result = engine.GetAllTariffs(tariffs, startingDate, data.UserSettings.LeavingTime.AddDays(1));
+            var result = engine.GetAllTariffs(tariffs, startingDate, leavingDate);
 
             Assert.AreEqual(result.Count, tariffs.Count * 2);
         }
 
+        [TestMethod]
+        [DynamicData(nameof(GetNonRelevantTariffs), DynamicDataSourceType.Method)]
+        public void Return0Tariffs_IfTariffsAre_BeforeStartingTimeAND_AfterLeavingTime(List<Tariff> tariffs, DateTime startingDate, DateTime leavingDate)
+        {
+            var result = engine.CalculateRelevantTariffs(tariffs, startingDate, leavingDate);
 
+            Assert.AreEqual(result.Count, 0);
+        }
     }
 }
